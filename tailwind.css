@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato", "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "ヒラギノ角ゴシック", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif;
+  padding-top: 84px;
+}
+
+#top:before {
+  content: "";
+  display: block;
+  padding-top: 50%;
+}
+
+#top-image {
+  background-image: url(./img/top.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.iframewrap {
+  height: 0;
+  padding-top: 56.25%;
+}
+
+.open {
+  display: block;
+}
+
+.timeline-content:before {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  background: theme('colors.red.400');
+  position: absolute;
+  left: 10.7rem;
+  top: 0.4rem;
+  border-radius: 100%;
+}
+
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  @apply gap-8;
+}
